@@ -1,0 +1,36 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+ width: 100%;
+ height: 100%;
+background-color: black;
+color: aliceblue;
+
+
+
+}
+
+
+.class{
+    background-color: green;
+    width: 179px;
+   height: 600px;
+    border: 2px solid rgb(65, 63, 63);
+    border-radius: 50px;
+margin: 30px;
+text-align: center;
+padding: 2px;
+overflow: hidden;
+
+
+
+}
+::-webkit-scrollbar{
+    background-color:black;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(252, 255, 255);
+    height: 76px;
+    border-radius: 100px;
+}

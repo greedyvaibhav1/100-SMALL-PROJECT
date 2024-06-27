@@ -1,0 +1,57 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #555;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cointener {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    background: #222;
+  }
+  
+  .class {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out 0.5s;
+  }
+  
+  .class1 {
+    background: url(jack-dong-h87LpHFEIDU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0,46% 0 , 39% 100%, 0 100%);
+  }
+  
+  .class2 {
+    background: url(daniel-dvorsky-QLysVNuRLts-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(19% 0, 87% 0, 64% 100%, 33% 100%);
+  }
+  
+  .class3 {
+    background: url(andrea-de-santis-Ddc01PFQjS4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(82% 0, 100% 0, 100% 100%, 63% 100%);
+  }
+
+ .cointener:hover .class {
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+      }
+      
+ .cointener .class:hover { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      }
