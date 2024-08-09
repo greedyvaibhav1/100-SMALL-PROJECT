@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,7 @@ body {
   height: 100vh;
   width: 100%;
   overflow-x: hidden;
-  background-color: black;
+  background-color: #ac7b84;
   color: aliceblue;
 }
 img {
@@ -32,12 +33,19 @@ header {
   justify-content: space-between;
   z-index: 100px;
 }
+.logo img {
+  height: 100px;
+  width: 100px;
+}
 .logo {
-  font-size: 3rem;
   color: orange;
   font-weight: 800;
   cursor: pointer;
   transition: 2s ease;
+  background-color: #4c243b;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
 }
 .nav a:hover {
   transform: scale(1.1);
@@ -60,12 +68,11 @@ header {
   border-bottom: 3px solid #3b2f2f;
 }
 
-@media (max-width: 995px) {
+@media (max-width: 768px) {
   .logo {
     display: none;
   }
-  .nav a {
-  }
+
   .nav {
     border-bottom: 2px solid #b74b4b;
     border-left: 2px solid #b64949;
@@ -90,7 +97,13 @@ header {
     border-radius: 0.5rem;
     border: bottom 0.5rem solid #b74b4b;
   }
+
+  #projects video {
+    height: 100px;
+    width: 100px;
+  }
 }
+
 section {
   min-height: 100vh;
   padding: 5rem 9% 5rem;
@@ -155,4 +168,65 @@ span {
 #skills {
   text-align: center;
   font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 2;
+  flex-direction: column;
+}
+.skills {
+  font-size: 38px;
+  color: hsl(0, 43%, 51%);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.education {
+  font-size: 38px;
+  color: #b74b4b;
+  text-transform: uppercase;
+}
+#education {
+  text-align: center;
+  background-color: #191919;
+  font-size: 16px;
+  color: #ffffff;
+  display: flex;
+  line-height: 2;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 400px) {
+  .nav {
+    display: none;
+  }
+}
+
+#projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: start;
+  background-color: #191919;
+}
+
+video {
+  width: 300px;
+  margin-top: 20px;
+  height: 200px;
+}
+video:hover {
+  scale: 2;
+  cursor: pointer;
+}
+#projects h1 {
+  text-transform: uppercase;
+  font-size: 38px;
+  color: hsl(0, 43%, 51%);
+  font-weight: 700;
+}
+#projects div a {
+  font-size: 20px;
+  text-transform: uppercase;
 }
