@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: aliceblue;
+  text-decoration: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  /* scroll-snap-type: y mandatory; */
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+img {
+  height: 18rem;
+  width: 20rem;
+  background-color: forestgreen;
+}
+.nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.nav a {
+  margin-left: 30px;
+}
+main .hp {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+main .hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.page1 {
+  height: 100vh;
+}
+header .page1 {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .para1 {
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  width: 50vw;
+  height: 60vh;
+  margin-top: 80px;
+
+  flex-wrap: wrap;
+  overflow-y: hidden;
+}
+.hero img {
+  height: 60vh;
+  width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.button {
+  border: 2px solid royalblue;
+  height: 40px;
+  width: 100px;
+  color: aliceblue;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: medium;
+  margin: 20px 10px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+.table .col1 li:hover {
+  background: rgb(21, 20, 24);
+  transition: all 3s;
+}
+.button:hover {
+  scale: 1.05;
+  background-color: royalblue;
+}
+.span {
+  color: yellow;
+}
+.page2 {
+  height: 100vh;
+  /* scroll-snap-type: y mandatory; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
+}
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 80vh;
+}
+
+.table li {
+  font-size: 1.5rem;
+  margin: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.page3 {
+  height: 100vh;
+  width: 100%;
+}
+.cp {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: #00ff00;
+}
+.cp1 {
+  position: absolute;
+  top: 0;
+}
+h1 {
+  text-transform: capitalize;
+  font-size: 3rem;
+
+  text-align: center;
+
+  color: gold;
+}
+.table2 .button {
+  display: block;
+  text-align: center;
+  margin-left: 50%;
+  height: 30px;
+}
+.textarea {
+  color: black;
+}
+.table2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+}
+.hashtag {
+  height: 100vh;
+  width: 100%;
+}
+.music {
+  width: 100%;
+  height: 100vh;
+}
+.music ul li {
+  margin: 10px;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.h4 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+.page4 {
+  height: 100vh;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  main .hero {
+    flex-direction: column;
+  }
+  header .page1 {
+    flex-direction: column;
+  }
+  .table2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page3,
+  .page4,
+  .page5,
+  .page6,
+  .page7,
+  .page8,
+  .page9,
+  .page10,
+  .page11,
+  .page12,
+  .page13,
+  .page14,
+  .page15,
+  .page16,
+  .page17,
+  .page18 {
+    height: 200vh;
+    width: 100%;
+  }
+  .table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+  .table li {
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: normal;
+  }
+}

@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +14,8 @@ body {
   justify-content: center;
   display: flex;
 }
-.game {
-  height: 60vhmin;
+#game {
+  height: 60vmin;
   width: 60vmin;
   align-items: center;
   justify-content: center;
@@ -27,9 +28,10 @@ body {
   width: 18vmin;
   border-radius: 1rem;
   border: none;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+  /* box-shadow: 0 0 1rem rgba(0, 0, 0, 1); */
   font-size: 8vmin;
   color: #b0413b;
+  background-color: #191919;
 }
 .reset {
   color: aliceblue;
@@ -37,4 +39,24 @@ body {
   background-color: #191919;
   padding: 1rem;
   border: none;
+}
+.newgame{
+  color: aliceblue;
+  font-size: 1.1rem;
+  background-color: #191919;
+  padding: 1rem;
+  border: none;
+}
+.hide{
+  display: none;
+}
+#msg
+{
+  font-size: 30px;
+  color: plum;
+  font: sans-serif;
+ 
+  
+
+
 }
